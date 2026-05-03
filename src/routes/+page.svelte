@@ -1,4 +1,5 @@
 <script lang="ts">
+	import ChatBox from '../components/chat-box.svelte';
 	import Chatbox from '../components/chatbox.svelte';
 	import Player from '../components/player.svelte';
 	import type { CCTVLocation } from '../types/cctv.js';

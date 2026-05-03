@@ -5,10 +5,10 @@ const STREAM_SECRET = 'e7zk7pcdugt5hqregkt7nzq36rjt972948es9q7tthuyzf9b2g37da9dz
 
 export const POST = async ({ request }) => {
     try {
-        const { userId, userName } = await request.json();
+        const { userId, userName, role, image } = await request.json();
         const serverClient = StreamChat.getInstance(STREAM_KEY, STREAM_SECRET);
 
-        await serverClient.upsertUser({ id: userId, name: userName });
+        await serverClient.upsertUser({ id: userId, name: userName, role: role, image: image });
 
         const channel = serverClient.channel('messaging', 'public');
 
@@ -18,6 +18,6 @@ export const POST = async ({ request }) => {
         return json({ token });
     } catch (err) {
         console.error("Detail Server Error:", err);
-        return json({ error: "Gagal generate token" }, { status: 500 });
+        return json({ error: "Gagal generate token", err }, { status: 500 });
     }
 };
