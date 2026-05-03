@@ -30,8 +30,11 @@
 		"vite": "^8.0.7"
 	},
 	"dependencies": {
+		"convex": "^1.37.0",
 		"hls.js": "^1.6.16",
 		"lucide-svelte": "^1.0.1",
+		"media-icons": "^1.1.5",
+		"stream-chat": "^9.43.0",
 		"vidstack": "^1.12.13"
 	}
 }
