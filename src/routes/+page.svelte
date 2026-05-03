@@ -21,7 +21,11 @@
 	<div class="items-start gap-4 lg:flex">
 		<div class="flex-1">
 			<div class="aspect-video h-full w-full overflow-hidden rounded">
-				<Player title={cctv_detail?.nama as string} source={cctv_detail?.url as string}/>
+				{#if cctv_detail}
+					<Video title={cctv_detail?.nama as string} source={cctv_detail?.url as string}/>
+				{:else}
+				<h2>Loading...</h2>
+				{/if}
 			</div>
 			<div class="mt-4">
 				<h1 class="text-lg font-semibold">{cctv_detail?.nama}</h1>
