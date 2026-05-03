@@ -164,7 +164,7 @@
 						</div>
 
 						<!-- Tombol Aksi (Absolute pojok kanan atas) -->
-						<div class="absolute right-2 top-2 hidden group-active:flex group-hover:flex gap-2 bg-[#1f1f1f] p-1 rounded border border-stone-700 shadow-lg z-10">
+						<div class="absolute right-2 top-2 hidden group-focus-within:flex group-focus:flex group-active:flex group-hover:flex gap-2 bg-[#1f1f1f] p-1 rounded border border-stone-700 shadow-lg z-10">
 							<button
 								onclick={() => replyingTo = msg}
 								class="text-[10px] font-bold text-blue-400 hover:text-blue-300 px-1"
