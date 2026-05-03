@@ -133,7 +133,7 @@
 					<div class="group relative flex items-start gap-3 rounded px-2 py-2 transition-colors hover:bg-stone-800/50">
 						<!-- Avatar -->
 						<div
-							class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-stone-700 text-[10px] font-bold uppercase border border-stone-600"
+							class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-stone-700 text-[10px] font-bold uppercase border border-stone-600"
 						>
 							{msg.user.name.charAt(0)}
 						</div>
@@ -164,7 +164,7 @@
 						</div>
 
 						<!-- Tombol Aksi (Absolute pojok kanan atas) -->
-						<div class="absolute right-2 top-2 hidden group-hover:flex gap-2 bg-[#1f1f1f] p-1 rounded border border-stone-700 shadow-lg z-10">
+						<div class="absolute right-2 top-2 hidden group-active:flex group-hover:flex gap-2 bg-[#1f1f1f] p-1 rounded border border-stone-700 shadow-lg z-10">
 							<button
 								onclick={() => replyingTo = msg}
 								class="text-[10px] font-bold text-blue-400 hover:text-blue-300 px-1"
