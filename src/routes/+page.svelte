@@ -22,7 +22,7 @@
 		<div class="flex-1">
 			<div class="aspect-video h-full w-full overflow-hidden rounded">
 				{#if cctv_detail}
-					<Video title={cctv_detail?.nama as string} source={cctv_detail?.url as string}/>
+					<Player title={cctv_detail?.nama as string} source={cctv_detail?.url as string}/>
 				{:else}
 				<h2>Loading...</h2>
 				{/if}
